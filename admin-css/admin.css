@@ -1,0 +1,41 @@
+/* Admin Styles  */
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap, #wpadminbar {
+    background-color: #939393 !important;
+}
+#wpwrap {
+    background-color: white;
+}
+
+/* Login Styles */
+body.login {
+background-color: #939393;
+}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {
+    background-image: url(/wp-content/uploads/2019/07/logo-white.png);
+    width: 100% !important;
+    background-size: contain;
+}
+body.login div#login form#loginform {
+    background: transparent;
+    border-radius: 10px;
+}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {
+    background-color: #401b60; 
+}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {}
+body.login .privacy-policy-page-link {
+    display: none;
+}

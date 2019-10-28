@@ -1,0 +1,12 @@
+.mobile_nav.opened .mobile_menu_bar:before{content:'\4d'}
+@font-face{font-family:'Brandon-Medium';src:url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Regular.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Regular.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'Gotham-Medium';src:url("/wp-content/themes/pilsenmovember/fonts/Gotham-Medium.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/Gotham-Medium.woff") format("woff");font-weight:500;font-style:normal}
+@font-face{font-family:'Brandon-Bold';src:url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Bold.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Bold.woff") format("woff");font-weight:bold;font-style:normal}
+@font-face{font-family:'Gotham-Bold';src:url("/wp-content/themes/pilsenmovember/fonts/Gotham-Bold.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/Gotham-Bold.woff") format("woff");font-weight:bold;font-style:normal}
+.drop-shadow{-webkit-box-shadow:0 0 8px rgba(0,0,0,0.25);box-shadow:0 0 8px rgba(0,0,0,0.25);-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-transform:scale(1.05);transform:scale(1.05);background-color:#939393}
+:root{font-size:24px}
+h1,h2,h3{font-family:"Gotham-Bold";line-height:1}
+h2{font-size:2.35rem}
+p,li,a,em{font-family:"Brandon-Medium";font-size:1rem;color:black}
+p{line-height:1.5;color:black !important}
+code{font-family:'Courier New',Courier,monospace}

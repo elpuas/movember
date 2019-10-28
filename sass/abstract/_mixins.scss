@@ -1,0 +1,38 @@
+@mixin text-gradient($color-first, $color-last) {
+    background: -webkit-linear-gradient(45deg, $color-first 0%, $color-last 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+@mixin linear-gradient($color-first, $color-last) {
+    background: #a7cfdf; /* Old browsers */
+    background: -moz-linear-gradient(45deg, $color-first 0%, $color-first 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, $color-first 0%,$color-last 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, $color-first 0%,$color-last 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-first', endColorstr='$color-last',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin button-black() {
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: $brand-secondary-font-bold;
+    @media (max-width: $sm) {
+        padding: 10px 15px;
+    }
+}
+
+@mixin button-white() {
+    color: $primary-color;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: $brand-secondary-font-bold;
+    @media (max-width: $sm) {
+        padding: 10px 15px;
+    }
+}

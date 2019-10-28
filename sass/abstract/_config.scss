@@ -1,0 +1,91 @@
+// Constants
+$BASE_URL: '/wp-content/themes/pilsenmovember';
+
+// Theme Colors
+$primary-color:      #939393;
+$secondary-color:    #f0f0f0;
+$purple-color:       #401b60;    
+$black-color:        black;
+$white-color:        white;
+
+// Theme Font
+@font-face {
+    font-family: 'Brandon-Medium';
+    src: url('#{$BASE_URL}/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/BrandonGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('#{$BASE_URL}/fonts/Gotham-Medium.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon-Bold';
+    src: url('#{$BASE_URL}/fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/BrandonGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('#{$BASE_URL}/fonts/Gotham-Bold.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$brand-primary-font:            'Gotham-Bold';
+$brand-primary-font-regular:    'Gotham-Medium';
+$brand-secondary-font:          'Brandon-Medium';
+$brand-secondary-font-bold:     'Brandon-Bold';
+
+// Breakpoints
+$m:     1070px;
+$sm:    900px;
+$xs:    425px;
+
+// Dynamic Classes
+.drop-shadow {
+    box-shadow: 0 0 8px rgba(0, 0,  0, .25);
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    background-color: $primary-color;
+}
+
+// Typos
+
+:root {
+    font-size: 24px;
+}
+h1,h2,h3 {
+    font-family: $brand-primary-font;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.35rem;
+}
+
+p, li, a, em {
+    font-family: $brand-secondary-font;
+    font-size: 1rem;
+    color: $black-color;
+}
+
+p {
+    line-height: 1.5;
+    color: $black-color !important;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
