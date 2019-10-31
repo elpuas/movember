@@ -2,49 +2,48 @@
 $BASE_URL: '/wp-content/themes/pilsenmovember';
 
 // Theme Colors
-$primary-color:      #939393;
-$secondary-color:    #f0f0f0;
-$purple-color:       #401b60;    
-$black-color:        black;
-$white-color:        white;
+$primary-color:      #ce0e2d;
+$secondary-color:    #0f80c4;    
+$black-color:        #0f0f0f;
+$body-text-color:    #404040;
 
 // Theme Font
 @font-face {
-    font-family: 'Brandon-Medium';
-    src: url('#{$BASE_URL}/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
-        url('#{$BASE_URL}/fonts/BrandonGrotesque-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham-Medium';
-    src: url('#{$BASE_URL}/fonts/Gotham-Medium.woff2') format('woff2'),
-        url('#{$BASE_URL}/fonts/Gotham-Medium.woff') format('woff');
+    font-family: 'Avenir';
+    src: url('#{$BASE_URL}/fonts/Avenir-Medium.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/Avenir-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Brandon-Bold';
-    src: url('#{$BASE_URL}/fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
-        url('#{$BASE_URL}/fonts/BrandonGrotesque-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'AmericanCaptain';
+    src: url('#{$BASE_URL}/fonts/AmericanCaptain.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/AmericanCaptain.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham-Bold';
-    src: url('#{$BASE_URL}/fonts/Gotham-Bold.woff2') format('woff2'),
-        url('#{$BASE_URL}/fonts/Gotham-Bold.woff') format('woff');
+    font-family: 'AvenirBlack';
+    src: url('#{$BASE_URL}/fonts/Avenir-Black.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/Avenir-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeuePro';
+    src: url('#{$BASE_URL}/fonts/BebasNeuePro-Bold.woff2') format('woff2'),
+        url('#{$BASE_URL}/fonts/BebasNeuePro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-$brand-primary-font:            'Gotham-Bold';
-$brand-primary-font-regular:    'Gotham-Medium';
-$brand-secondary-font:          'Brandon-Medium';
-$brand-secondary-font-bold:     'Brandon-Bold';
+$primary-font:            'Avenir';
+$primary-font-bold:       'AvenirBlack';
+$headings-font:           'AmericanCaptain';
+$secondary-font:          'BebasNeuePro';
 
 // Breakpoints
 $m:     1070px;
@@ -62,10 +61,11 @@ $xs:    425px;
 // Typos
 
 :root {
-    font-size: 24px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 h1,h2,h3 {
-    font-family: $brand-primary-font;
+    font-family: $secondary-font;
     line-height: 1;
 }
 
@@ -74,18 +74,55 @@ h2 {
 }
 
 p, li, a, em {
-    font-family: $brand-secondary-font;
+    font-family: $primary-font;
     font-size: 1rem;
-    color: $black-color;
+    color: $body-text-color;
 }
 
 p {
     line-height: 1.5;
-    color: $black-color !important;
 }
 
 code {
     font-family: 'Courier New', Courier, monospace;
 }
+
+strong {
+    font-family: $primary-font-bold;
+    font-weight: 900;
+    font-style: normal;
+}
+
+a {
+    font-family: $primary-font-bold;
+    font-weight: 900;
+    font-style: normal;
+    color: $secondary-color;
+}
+
+#page-container {
+    padding-top: 80px !important;
+}
+
+.text-white {
+    p, h2 {
+        color: white;
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+}
+
+div[class*='et_pb_image_'] {
+    text-align: center;
+    
+    img {
+        max-width: 80%;
+    }
+}
+
+
 
 

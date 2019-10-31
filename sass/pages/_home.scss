@@ -1,0 +1,179 @@
+.page-home {
+    .section {
+        &-0-container {
+           .titulo-container {
+               .hero-image {
+                   padding: 5rem 0 1rem;
+                   text-align: center;
+               }
+           } 
+        }
+        &-1-container {
+            .et_pb_image_1 {
+                text-align: center;
+                img {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        &-2-container {
+            .et_pb_row {
+                padding: 0;
+                &:last-child {
+                    padding-top: 2rem;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                }
+
+                .et_pb_column_3 {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .container-list {
+                    text-align: center;
+
+                    ul {
+                        li {
+                            color: white;
+                            display: inline-block;
+                            font-family: $secondary-font;
+                            font-size: 2rem;
+                            margin: 0 1rem;
+                            text-align: center;
+                            text-transform: uppercase;
+                            vertical-align: middle;
+
+                            img {
+                                max-width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-3-container {
+            position: relative;
+            &:before {
+                content: '';
+                height: 150px;
+                width: 100%;
+                background-color: lightgray;
+                display: block;
+                position: absolute;
+                top: 55%;
+            }
+
+            .plsn-hero {
+                .et_pb_image {
+                    text-align: center;
+
+                    img {
+                        max-width: 80%;
+                    }
+                }
+
+                p {
+                    max-width: 60vw;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+
+            .plsn-carousel {
+                .owl-stage {
+                    display: flex;
+                    align-items: center;
+
+                    .dp_oc_item {
+                        text-align: center;
+
+                        img {
+                            max-width: 80%;
+                        }
+                    }
+                    
+                }
+
+                .owl-nav {
+                    &.arrow_size_medium {
+                        display: initial;
+                        .owl-prev,
+                        .owl-next {
+                            opacity: 1;
+
+                            &::before,
+                            &:after {
+                                font-size: 30px;
+                                color: white;
+                                background: black;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+
+                .owl-dots {
+                    display: none;
+                }
+            }
+        }
+
+        &-4-container {
+            .et_pb_row_7 {
+                display: flex;
+                align-items: center;
+            }
+            .et_pb_image_wrap {
+                text-align: center;
+
+                img {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        &-5-container {
+            padding: 1rem 0 3rem;
+
+            p {
+                max-width: 60vw;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-6-container {
+            background: $primary-color;
+
+            .plsn-list {
+                ul {
+                    text-align: center;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+
+                        img {
+                            max-width: 80%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &-7-container {
+            p {
+                max-width: 60vw;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

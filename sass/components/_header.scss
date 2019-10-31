@@ -2,29 +2,53 @@ div#page-container {
 
     header {
         .container {
+            .custom-secondary-menu {
+                align-items: center;
+                display: flex;
+                justify-content: flex-end;
+                min-height: 100px;
+                position: relative;
+                z-index: 999;
 
-            ul {
-                li {
-                    &.centered-inline-logo-wrap {
-                       
+                .plsn-top-menu-container {
+                    #menu-top-menu {
+                        li {
+                            display: inline-block;
+                            margin-right: 100px;
+                            &.current_page_item {
+                                a {
+                                    color: $primary-color;
+                                }
+                            }
+
+                            a {
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                color: $body-text-color;
+                                &:hover {
+                                    color: $primary-color;
+                                }
+                            }
+                        }
                     }
-                    &.current-menu-item {
-                    
+                }
+
+                #et-top-navigation {
+                    float: initial;
+                    padding: 0 !important;
+                    span {
+                        padding-bottom: 0;
+                        &:before {
+                            color: $black-color;
+                        }
+
+                        :hover {
+                            &:before {
+                                color: $primary-color;
+                            }
+                        }
                     }
-                    
-                }
-            }
-        }
-        div#et_mobile_nav_menu {
-
-            .mobile_nav {
-                
-                .select_page {
-                    
-                }
-            }
-            ul#mobile_menu {
-
+                }   
             }
         }
     }

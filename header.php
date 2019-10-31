@@ -240,7 +240,9 @@
 						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
 					</a>
 				</div>
-			<?php
+				<div class="custom-secondary-menu">
+				<?php
+ 
 				$logo_container = ob_get_clean();
 
 				/**
@@ -251,7 +253,18 @@
 				 * @param string $logo_container
 				 */
 				echo et_core_intentionally_unescaped( apply_filters( 'et_html_logo_container', $logo_container ), 'html' );
-			?>
+				/**
+				 * Add the new menu to header
+				 *
+				 * @author Alfredo Navas <elpuas@gmail.com>
+				 */
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'top-menu',
+						'container_class' => 'plsn-top-menu-container',
+					)
+				);
+				?>
 				<div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
 					<?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
 						<nav id="top-menu-nav">

@@ -1,12 +1,62 @@
 .mobile_nav.opened .mobile_menu_bar:before{content:'\4d'}
-@font-face{font-family:'Brandon-Medium';src:url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Regular.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Regular.woff") format("woff");font-weight:normal;font-style:normal}
-@font-face{font-family:'Gotham-Medium';src:url("/wp-content/themes/pilsenmovember/fonts/Gotham-Medium.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/Gotham-Medium.woff") format("woff");font-weight:500;font-style:normal}
-@font-face{font-family:'Brandon-Bold';src:url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Bold.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/BrandonGrotesque-Bold.woff") format("woff");font-weight:bold;font-style:normal}
-@font-face{font-family:'Gotham-Bold';src:url("/wp-content/themes/pilsenmovember/fonts/Gotham-Bold.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/Gotham-Bold.woff") format("woff");font-weight:bold;font-style:normal}
-.drop-shadow{-webkit-box-shadow:0 0 8px rgba(0,0,0,0.25);box-shadow:0 0 8px rgba(0,0,0,0.25);-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-transform:scale(1.05);transform:scale(1.05);background-color:#939393}
-:root{font-size:24px}
-h1,h2,h3{font-family:"Gotham-Bold";line-height:1}
+@font-face{font-family:'Avenir';src:url("/wp-content/themes/pilsenmovember/fonts/Avenir-Medium.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/Avenir-Medium.woff") format("woff");font-weight:500;font-style:normal}
+@font-face{font-family:'AmericanCaptain';src:url("/wp-content/themes/pilsenmovember/fonts/AmericanCaptain.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/AmericanCaptain.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'AvenirBlack';src:url("/wp-content/themes/pilsenmovember/fonts/Avenir-Black.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/Avenir-Black.woff") format("woff");font-weight:900;font-style:normal}
+@font-face{font-family:'BebasNeuePro';src:url("/wp-content/themes/pilsenmovember/fonts/BebasNeuePro-Bold.woff2") format("woff2"),url("/wp-content/themes/pilsenmovember/fonts/BebasNeuePro-Bold.woff") format("woff");font-weight:bold;font-style:normal}
+.drop-shadow{-webkit-box-shadow:0 0 8px rgba(0,0,0,0.25);box-shadow:0 0 8px rgba(0,0,0,0.25);-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-transform:scale(1.05);transform:scale(1.05);background-color:#ce0e2d}
+:root{font-size:16px;-webkit-box-sizing:border-box;box-sizing:border-box}
+h1,h2,h3{font-family:"BebasNeuePro";line-height:1}
 h2{font-size:2.35rem}
-p,li,a,em{font-family:"Brandon-Medium";font-size:1rem;color:black}
-p{line-height:1.5;color:black !important}
+p,li,a,em{font-family:"Avenir";font-size:1rem;color:#404040}
+p{line-height:1.5}
 code{font-family:'Courier New',Courier,monospace}
+strong{font-family:"AvenirBlack";font-weight:900;font-style:normal}
+a{font-family:"AvenirBlack";font-weight:900;font-style:normal;color:#0f80c4}
+#page-container{padding-top:80px !important}
+.text-white p,.text-white h2{color:white;text-align:center}
+.text-white h2{text-transform:uppercase}
+div[class*='et_pb_image_']{text-align:center}
+div[class*='et_pb_image_'] img{max-width:80%}
+div#page-container header .container .custom-secondary-menu{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;min-height:100px;position:relative;z-index:999}
+div#page-container header .container .custom-secondary-menu .plsn-top-menu-container #menu-top-menu li{display:inline-block;margin-right:100px}
+div#page-container header .container .custom-secondary-menu .plsn-top-menu-container #menu-top-menu li.current_page_item a{color:#ce0e2d}
+div#page-container header .container .custom-secondary-menu .plsn-top-menu-container #menu-top-menu li a{text-transform:uppercase;font-weight:bold;color:#404040}
+div#page-container header .container .custom-secondary-menu .plsn-top-menu-container #menu-top-menu li a:hover{color:#ce0e2d}
+div#page-container header .container .custom-secondary-menu #et-top-navigation{float:initial;padding:0 !important}
+div#page-container header .container .custom-secondary-menu #et-top-navigation span{padding-bottom:0}
+div#page-container header .container .custom-secondary-menu #et-top-navigation span:before{color:#0f0f0f}
+div#page-container header .container .custom-secondary-menu #et-top-navigation span :hover:before{color:#ce0e2d}
+.plsn-cta .et_pb_text_inner{text-align:center}
+.plsn-cta .et_pb_text_inner a{color:white;text-transform:uppercase;background-color:#ce0e2d;padding:.75rem 1rem}
+.page-home .section-0-container .titulo-container .hero-image{padding:5rem 0 1rem;text-align:center}
+.page-home .section-1-container .et_pb_image_1{text-align:center}
+.page-home .section-1-container .et_pb_image_1 img{max-width:80%}
+.page-home .section-2-container .et_pb_row{padding:0}
+.page-home .section-2-container .et_pb_row:last-child{padding-top:2rem}
+.page-home .section-2-container .et_pb_row p{color:white;text-align:center}
+.page-home .section-2-container .et_pb_row .et_pb_column_3{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.page-home .section-2-container .et_pb_row .container-list{text-align:center}
+.page-home .section-2-container .et_pb_row .container-list ul li{color:white;display:inline-block;font-family:"BebasNeuePro";font-size:2rem;margin:0 1rem;text-align:center;text-transform:uppercase;vertical-align:middle}
+.page-home .section-2-container .et_pb_row .container-list ul li img{max-width:70%}
+.page-home .section-3-container{position:relative}
+.page-home .section-3-container:before{content:'';height:150px;width:100%;background-color:lightgray;display:block;position:absolute;top:55%}
+.page-home .section-3-container .plsn-hero .et_pb_image{text-align:center}
+.page-home .section-3-container .plsn-hero .et_pb_image img{max-width:80%}
+.page-home .section-3-container .plsn-hero p{max-width:60vw;text-align:center;margin:0 auto}
+.page-home .section-3-container .plsn-carousel .owl-stage{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.page-home .section-3-container .plsn-carousel .owl-stage .dp_oc_item{text-align:center}
+.page-home .section-3-container .plsn-carousel .owl-stage .dp_oc_item img{max-width:80%}
+.page-home .section-3-container .plsn-carousel .owl-nav.arrow_size_medium{display:initial}
+.page-home .section-3-container .plsn-carousel .owl-nav.arrow_size_medium .owl-prev,.page-home .section-3-container .plsn-carousel .owl-nav.arrow_size_medium .owl-next{opacity:1}
+.page-home .section-3-container .plsn-carousel .owl-nav.arrow_size_medium .owl-prev::before,.page-home .section-3-container .plsn-carousel .owl-nav.arrow_size_medium .owl-prev:after,.page-home .section-3-container .plsn-carousel .owl-nav.arrow_size_medium .owl-next::before,.page-home .section-3-container .plsn-carousel .owl-nav.arrow_size_medium .owl-next:after{font-size:30px;color:white;background:black;border-radius:50%}
+.page-home .section-3-container .plsn-carousel .owl-dots{display:none}
+.page-home .section-4-container .et_pb_row_7{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.page-home .section-4-container .et_pb_image_wrap{text-align:center}
+.page-home .section-4-container .et_pb_image_wrap img{max-width:80%}
+.page-home .section-5-container{padding:1rem 0 3rem}
+.page-home .section-5-container p{max-width:60vw;margin:0 auto;text-align:center;margin-bottom:2rem}
+.page-home .section-6-container{background:#ce0e2d}
+.page-home .section-6-container .plsn-list ul{text-align:center}
+.page-home .section-6-container .plsn-list ul li{list-style:none;display:inline-block}
+.page-home .section-6-container .plsn-list ul li img{max-width:80%}
+.page-home .section-7-container p{max-width:60vw;margin:0 auto;text-align:center;margin-bottom:2rem}
