@@ -1,0 +1,21 @@
+.page-como-donar {
+	.section {
+		&-2-container {
+			padding-bottom: 0;
+			.et_pb_column_1 {
+				p {
+					max-width: 60vw;
+					text-align: center;
+					margin: 0 auto;
+				}
+			}
+		}
+		&-3-container {
+			.et_pb_row_2, 
+			.et_pb_row_3 {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

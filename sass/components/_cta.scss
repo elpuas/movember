@@ -1,5 +1,5 @@
 .plsn-cta {
-	.et_pb_text_inner{
+	.et_pb_text_inner {
 		text-align: center;
 
 		a {
@@ -8,5 +8,14 @@
 			background-color: $primary-color;
 			padding: .75rem 1rem;
 		}
-	}              
+	} 
+	
+	&--small {
+		.et_pb_text_inner {
+			a {
+				font-size: 0.75rem;
+				padding: .5rem 0.75rem;
+			}
+		}
+	}
 }

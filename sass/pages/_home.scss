@@ -20,6 +20,11 @@
         &-2-container {
             .et_pb_row {
                 padding: 0;
+
+                .et_pb_text_3 {
+                    margin-bottom: .25rem;
+                }
+
                 &:last-child {
                     padding-top: 2rem;
                 }
@@ -58,16 +63,6 @@
         }
         &-3-container {
             position: relative;
-            &:before {
-                content: '';
-                height: 150px;
-                width: 100%;
-                background-color: lightgray;
-                display: block;
-                position: absolute;
-                top: 55%;
-            }
-
             .plsn-hero {
                 .et_pb_image {
                     text-align: center;
@@ -124,7 +119,7 @@
         }
 
         &-4-container {
-            .et_pb_row_7 {
+            .et_pb_row_8 {
                 display: flex;
                 align-items: center;
             }
@@ -173,6 +168,26 @@
                 margin: 0 auto;
                 text-align: center;
                 margin-bottom: 2rem;
+            }
+        }
+
+        &-9-container {
+            .plsn-list {
+                ul {
+                    text-align: center;
+
+                    li {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        list-style: none;
+                        margin: 0 1rem;
+                        font-size: 1rem;
+
+                        input[type='checkbox'] {
+                            margin-right: .5rem;
+                        }
+                    }
+                }
             }
         }
     }

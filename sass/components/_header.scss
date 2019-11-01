@@ -14,7 +14,7 @@ div#page-container {
                     #menu-top-menu {
                         li {
                             display: inline-block;
-                            margin-right: 100px;
+                            margin-right: 50px;
                             &.current_page_item {
                                 a {
                                     color: $primary-color;
@@ -23,8 +23,8 @@ div#page-container {
 
                             a {
                                 text-transform: uppercase;
-                                font-weight: bold;
                                 color: $body-text-color;
+                                font-size: .85rem;
                                 &:hover {
                                     color: $primary-color;
                                 }

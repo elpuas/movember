@@ -1,6 +1,6 @@
 footer {
     &#main-footer {
-        
+        display: none;
         div#footer-bottom {
             
         }
@@ -13,6 +13,79 @@ footer {
             li {
                 @media ( max-width: $sm) {}
                
+            }
+        }
+    }
+}
+
+.section-footer {
+    background-color: $primary-color;
+    padding: 0 !important;
+
+    .et_pb_column {
+        &_23,
+        &_24,
+        &_7,
+        &_8 {
+            .et_pb_menu {
+                background-color: transparent;
+                ul {
+                    li {
+                        a {
+                            color: white;
+                            font-size: .75rem;
+                        }
+                    }
+                }
+            }
+        }
+        &_26,
+        &_10 {
+            .et_pb_contact_form_0 {
+                margin-bottom: .5rem;
+            }
+            p {
+                color: white;
+                font-size: .75rem;
+                text-align: center;
+            }
+            .et_pb_contact_field {
+                width: 100%;
+                padding: 0;
+                input {
+                    height: 25px;
+                }
+            }
+
+            .et_contact_bottom_container {
+                position: relative;
+                button {
+                    background-image: url('/wp-content/uploads/2019/11/Footer_icoSEND.png');
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    border: none;
+                    font-size: 1px;
+                    height: 16px;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    width: 16px;
+
+                    &:before {
+                        content: none !important;
+                    }
+                }
+            }
+        }
+
+        &_27,
+        &_11 {
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: 1rem;
+                }
             }
         }
     }
