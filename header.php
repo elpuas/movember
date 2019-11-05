@@ -258,12 +258,12 @@
 				 *
 				 * @author Alfredo Navas <elpuas@gmail.com>
 				 */
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'top-menu',
-						'container_class' => 'plsn-top-menu-container',
-					)
-				);
+				// wp_nav_menu(
+				// 	array(
+				// 		'theme_location'  => 'top-menu',
+				// 		'container_class' => 'plsn-top-menu-container',
+				// 	)
+				// );
 				?>
 				<div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
 					<?php if ( ! $et_slide_header || is_customize_preview() ) : ?>

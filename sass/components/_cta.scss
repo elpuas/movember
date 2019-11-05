@@ -7,6 +7,10 @@
 			text-transform: uppercase;
 			background-color: $primary-color;
 			padding: .75rem 1rem;
+
+			@media ( max-width: $sm) {
+				font-size: 0.75rem;
+			}
 		}
 	} 
 	

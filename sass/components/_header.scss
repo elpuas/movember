@@ -10,14 +10,18 @@ div#page-container {
                 position: relative;
                 z-index: 999;
 
-                .plsn-top-menu-container {
-                    #menu-top-menu {
+                #top-menu-nav {
+                    #top-menu {
                         li {
                             display: inline-block;
                             margin-right: 50px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
                             &.current_page_item {
                                 a {
                                     color: $primary-color;
+                                    padding-bottom: 0;
                                 }
                             }
 
@@ -50,6 +54,10 @@ div#page-container {
                     }
                 }   
             }
+        }
+        .et_mobile_menu {
+            margin-top: 34px;
+            border-top: 3px solid $primary-color;
         }
     }
 }

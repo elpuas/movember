@@ -4,6 +4,9 @@
 			.et_pb_row_0 {
 				display: flex;
 				align-items: center;
+				@media ( max-width: $sm ) {
+					flex-direction: column;
+				}
 
 				.text-white {
 					p {
