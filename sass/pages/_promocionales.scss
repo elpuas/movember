@@ -1,0 +1,88 @@
+.page-promocionales {
+	.section {
+		&-0-container {}
+
+		&-1-container {
+			.shop-sidebar {
+				h2 {
+					text-transform: uppercase;
+					font-size: 1.75rem;
+				}
+				ul {
+					padding: 0;
+					li {
+						list-style: none;
+					}
+				}
+			}
+		}
+	}
+	.section-footer {
+		.et_pb_column {
+			&_11,
+			&_12 {
+				.et_pb_menu {
+					background-color: transparent;
+					ul {
+						li {
+							a {
+								color: white;
+								font-size: .75rem;
+							}
+						}
+					}
+				}
+			}
+
+			&_14 {
+				.et_pb_contact_form_0 {
+					margin-bottom: .5rem;
+				}
+
+				p {
+					color: white;
+					font-size: .75rem;
+					text-align: center;
+				}
+
+				.et_pb_contact_field {
+					width: 100%;
+					padding: 0;
+					input {
+						height: 25px;
+					}
+				}
+
+				.et_contact_bottom_container {
+					position: relative;
+					button {
+						background-image: url('/wp-content/uploads/2019/11/Footer_icoSEND.png');
+						background-position: right;
+						background-repeat: no-repeat;
+						border: none;
+						font-size: 1px;
+						height: 16px;
+						position: absolute;
+						right: 10px;
+						top: 10px;
+						width: 16px;
+
+						&:before {
+							content: none !important;
+						}
+					}
+				}
+			}
+
+			&_15 {
+				ul {
+					li {
+						display: inline-block;
+						list-style: none;
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
